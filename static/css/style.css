@@ -88,10 +88,10 @@ h1, h1 a, h2, h2 a, h3, h3 a, h4, h4 a, h5, h5 a, h6, h6 a {
     line-height: 1.4;
 }
 .witr_section_title_inner h2 {
-    font-size: 16px;
+    font-size: 32px;
     display: inline-block;
     color: #ffc80a;
-    padding: 0 0 5px 0;
+    padding-top: 1.5rem;
 }
 .witr_bar_main {
     margin: 10px 0px 10px 0px;
@@ -1598,7 +1598,7 @@ a.dtbtn:hover {
 }
 /* ===== 10. Portfolio Area CSS ===== */
 .project_bg_area {
-    background-image: url("../image/projects-bg.jpg");
+    background-image: url("../new_image/banner/banner2.jpg");
     background-position: center center;
     background-size: cover;
     padding: 95px 0 270px;
@@ -1746,7 +1746,7 @@ a.dtbtn:hover {
     padding: 20px 10px 23px;
     border: none;
     position: absolute;
-    bottom: -100px;
+    bottom: 0px;
     left: 0;
     right: 0;
     z-index: 9;
@@ -1762,6 +1762,7 @@ a.dtbtn:hover {
 }
 .positi_3 .porttitle_inner4 h3 a, .positi_3 .porttitle_inner4 p span {
     color: #fff;
+	font-size: 15px;
 }
 .portfolio_nav {
     padding: 0 0 28px;
@@ -1982,6 +1983,12 @@ a.dtbtn:hover {
     border: 1px solid #f1f1f1;
     border-top: 0 solid #f1f1f1;
 }
+
+.pprotfolio4.positi_3 {
+	width: 90%;
+	margin-left: 5%;
+}
+
 .portfolio_nav {
     text-align: center;
 }
