@@ -1683,8 +1683,8 @@ a.dtbtn:hover {
 }
 .ps1 .witr_content_pslide_text {
     position: absolute;
-    left: 30px;
-    right: 30px;
+    left: 15px;
+    right: 15px;
     transition: .5s;
     z-index: 2;
 }
@@ -1700,7 +1700,7 @@ a.dtbtn:hover {
 .witr_pslide3 .witr_pslide_custom {
     bottom: -17px;
     right: 50%;
-	width: 3rem;
+	width: 2rem;
     -webkit-transform: translateX(50%);
     transform: translateX(50%);
 }
@@ -3408,6 +3408,9 @@ blockquote {
 .copy-right-text p {
     margin: 0;
     padding: 0;
+}
+.copy-right-text p.text-center {
+    text-align: center;
 }
 .copy-right-text p, .footer-menu ul li a {
     color: #ffffff;
