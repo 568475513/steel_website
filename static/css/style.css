@@ -2692,7 +2692,7 @@ ul.page-numbers a.page-numbers {
 }
 /* ===== Blog Area CSS ===== */
 .witr-blog-side-area.blog_sidebar {
-    padding: 100px 0px 50px;
+    padding: 0px 0px 50px;
 }
 .blog-left-side > div {
     background-color: #fff;
@@ -3206,7 +3206,7 @@ blockquote {
     color: #ffffff;
 }
 .footer-middle .widget h2 {
-    margin-bottom: 26px;
+    margin-bottom: 36px;
     margin-top: 28px;
     position: relative;
 }
@@ -3217,6 +3217,16 @@ blockquote {
 }
 .metalplan-description-area a img {
     margin: 26px 0;
+}
+.metalplan-description-area a .logo_new {
+    width: 255px;
+    height: 149px;
+    background: url('../new_image/logo_new.jpg') no-repeat;
+    background-position: bottom;
+    background-size: 255px 149px;
+    margin: auto;
+    margin-top: 26px;
+    margin-bottom: 26px;
 }
 .gallery-item {
     display: inline-block;
@@ -3276,6 +3286,9 @@ blockquote {
 }
 .metalplan-desmetalplaniption-area a img {
     margin: 26px 0;
+}
+.metalplan-description-area .social-icons {
+    text-align: center;
 }
 .metalplan-description-area .social-icons a {
     width: 40px;
