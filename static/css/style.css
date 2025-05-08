@@ -1611,7 +1611,7 @@ a.dtbtn:hover {
     top: 0;
     left: 0;
     position: absolute;
-    background: #02101e;
+    background: #02101e55;
     opacity: .9;
 }
 .project_bg_area .witr_section_title_inner h1, .project_bg_area .witr_section_title_inner h2, .project_bg_area .witr_section_title_inner h3 {
