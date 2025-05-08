@@ -3281,6 +3281,12 @@ blockquote {
 .footer-widget.address p {
     margin-bottom: 9px;
 }
+.footer-widget.address p a{
+    color: #ffffff;
+}
+.footer-widget.address p a:hover{
+    color: #ffc80a;
+}
 .footer-middle .widget ul li a:hover, .footer-middle .widget ul li:hover:before {
     color: #ffc80a;
 }
@@ -4630,6 +4636,7 @@ button:focus {
     margin-bottom: 20px;
     border-radius: 0;
     background: #fff;
+    height: 100%;
 }
 .contact_page_area .service_top_image {
     position: relative;
