@@ -25,7 +25,7 @@
             <div class="row">
                <div class="col-md-12 txtc  text-center ccase">
                   <div class="brpt">
-                     <h2>Products</h2>
+                     <h2 id="second-h2"></h2>
                   </div>
                   <div class="breadcumb-inner">
                      <ul>
@@ -694,11 +694,24 @@
          $(document).ready(function(){
             $("#footer-template").load("static/template/footer.html");  
 						$("#header-template").load("static/template/header.html");
+
             $(`#second-card-${getQueryParam('t')}`).show();
             function getQueryParam(param) {
               const urlParams = new URLSearchParams(window.location.search);
               return urlParams.get(param);
             }
+
+            var tJson = {
+              '1': 'STAINLESS STEEL PIPE',
+              '2': 'Welded STEEL PIPE',
+              '3': 'Oilfield Tubular Goods (OCTG)',
+              '4': 'SMLS STEEL PIPE',
+              '5': 'STEEL FITTINGS',
+              '6': 'Steel Section',
+              '7': 'Customize service',
+              '8': 'Coated Steel Pipe'
+            }
+            $('#second-h2').text(tJson[getQueryParam('t')]);
         });
      </script>
    </body>
