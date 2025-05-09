@@ -238,10 +238,18 @@ h1, h1 a, h2, h2 a, h3, h3 a, h4, h4 a, h5, h5 a, h6, h6 a {
 .mobile_menu_logo.text-center {
      padding: 20px 0;
 }
+.mobile_menu_logo img {
+    max-width: 246px;
+    max-height: 144px;
+}
 
 /* LOGO CSS */
  .logo a {
      display: inline-block;
+}
+.logo img {
+    max-width: 246px;
+    max-height: 144px;
 }
 
 /* logo sticky */
@@ -4631,7 +4639,7 @@ button:focus {
     margin-top: 0;
 }
 .contact_page_area .all_color_service {
-    padding: 30px 30px 40px 30px;
+    padding: 20px;
     border: 1px solid #2e3748;
 }
 .contact_page_area .all_color_service, .service_top_image::after {
