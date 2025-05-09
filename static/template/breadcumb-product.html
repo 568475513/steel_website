@@ -1,0 +1,71 @@
+<ul>
+  <li>You here! <i class="icofont-thin-right"></i></li>
+  <li><a href="../../index.html" rel="v:url" property="v:title">Home</a></li>
+  <li><i class="icofont-thin-right"></i></li>
+  <li><a href="../../products.html" rel="v:url" property="v:title">Products</a></li>
+  <li><i class="icofont-thin-right"></i></li>
+  <li><a href="#" id="breadcumb-area-title"></a></li>
+</ul>
+
+<script>
+  $(document).ready(function(){
+    //处理面包屑
+    var breadcumbText = {
+      'SSP.html': 'STAINLESS STEEL PIPE',
+      'WSSP.html': 'STAINLESS STEEL PIPE',
+
+      'SSAW.html': 'Welded STEEL PIPE',
+      'LSAW.html': 'Welded STEEL PIPE',
+      'ERW.html': 'Welded STEEL PIPE',
+      'EFW.html': 'Welded STEEL PIPE',
+      'PilingPipe.html': 'Welded STEEL PIPE',
+
+      'A5T.html': 'Oilfield Tubular Goods (OCTG)',
+      'A5S.html': 'Oilfield Tubular Goods (OCTG)',
+      'SP.html': 'Oilfield Tubular Goods (OCTG)',
+      'DP.html': 'Oilfield Tubular Goods (OCTG)',
+      'CCP.html': 'Oilfield Tubular Goods (OCTG)',
+
+
+      'CSP.html': 'SMLS STEEL PIPE',
+      'BSP.html': 'SMLS STEEL PIPE',
+      'SP.html': 'SMLS STEEL PIPE',
+      'ASP.html': 'SMLS STEEL PIPE',
+
+      'Flange.html': 'STEEL FITTINGS',
+      'Elbow.html': 'STEEL FITTINGS',
+      'Tee.html': 'STEEL FITTINGS',
+      'Reducer.html': 'STEEL FITTINGS',
+
+      'SPC.html': 'Steel Section',
+      'HS.html': 'Steel Section',
+
+      'CP.html': 'Customize service',
+      'PT.html': 'Customize service',
+      'Welding.html': 'Customize service', //未有html页面
+      'CF.html': 'Customize service',
+
+      'FBE.html': 'Coated Steel Pipe',
+      'E.html': 'Coated Steel Pipe',
+      '3LPP.html': 'Coated Steel Pipe',
+      '3LPE.html': 'Coated Steel Pipe',
+    }
+    var tJson = {
+      'STAINLESS STEEL PIPE': 1,
+      'Welded STEEL PIPE': 2,
+      'Oilfield Tubular Goods (OCTG)': 3,
+      'SMLS STEEL PIPE': 4,
+      'STEEL FITTINGS': 5,
+      'Steel Section': 6,
+      'Customize service': 7,
+      'Coated Steel Pipe': 8
+    }
+    const htmlName = getLastSegment();
+    $('#breadcumb-area-title').text(breadcumbText[htmlName]).attr("href", `../../products_second.html?t=${tJson[breadcumbText[htmlName]]}`);
+
+    function getLastSegment() {
+      var pathArray = window.location.pathname.split('/');
+      return pathArray.pop() || 'SSP.html'; // 如果路径中没有斜杠，返回默认值
+    }
+  });
+</script>
