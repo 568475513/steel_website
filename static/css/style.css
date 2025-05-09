@@ -1610,7 +1610,7 @@ a.dtbtn:hover {
     top: 0;
     left: 0;
     position: absolute;
-    background: #02101e;
+    background: #02101e55;
     opacity: .9;
 }
 .project_bg_area .witr_section_title_inner h1, .project_bg_area .witr_section_title_inner h2, .project_bg_area .witr_section_title_inner h3 {
@@ -1742,7 +1742,7 @@ a.dtbtn:hover {
     margin-bottom: 35px;
 }
 .positi_3.pprotfolio4 {
-    padding: 20px 10px 23px;
+    padding: 10px;
     border: none;
     position: absolute;
     bottom: 0px;
@@ -1757,7 +1757,7 @@ a.dtbtn:hover {
     bottom: 0;
 }
 .positi_3.pprotfolio4 {
-    background: #ffc80a;
+    background: #2E5D9C;
 }
 .positi_3 .porttitle_inner4 h3 a, .positi_3 .porttitle_inner4 p span {
     color: #fff;
@@ -1798,7 +1798,11 @@ a.dtbtn:hover {
 .single_protfolio:hover .prot_thumb img {
     /* transform: scale(1.1); */
 }
+.product-container .prot_content {
+    display: none;
+}
 .prot_content {
+    /* display: none; */
     position: absolute;
     text-align: center;    
     transition: .5s;
@@ -3280,6 +3284,12 @@ blockquote {
 .footer-widget.address p {
     margin-bottom: 9px;
 }
+.footer-widget.address p a{
+    color: #ffffff;
+}
+.footer-widget.address p a:hover{
+    color: #ffc80a;
+}
 .footer-middle .widget ul li a:hover, .footer-middle .widget ul li:hover:before {
     color: #ffc80a;
 }
@@ -4629,6 +4639,7 @@ button:focus {
     margin-bottom: 20px;
     border-radius: 0;
     background: #fff;
+    height: 100%;
 }
 .contact_page_area .service_top_image {
     position: relative;
