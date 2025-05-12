@@ -1649,7 +1649,7 @@ a.dtbtn:hover {
     margin-bottom: 45px;
 }
 .witr_pslide3 .witr_single_pslide {
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     overflow: inherit;
 }
 .witr_pslide_image {
@@ -1684,13 +1684,13 @@ a.dtbtn:hover {
 }
 .ps3.ps1 .witr_content_pslide_text {
     bottom: 38px;
-    opacity: 1;
-	height: 12rem;
+    opacity: 0.8;
     box-shadow: 0 0 65px 0 #00000017;
     text-align: center;
     padding: 20px 10px 45px;
-    border-radius: 5px;
+    border-radius: 10px;
     background: #fff;
+    font-size: 15px;
 }
 .ps1 .witr_content_pslide_text {
     position: absolute;
