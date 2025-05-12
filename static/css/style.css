@@ -1178,10 +1178,14 @@ a.dtbtn:hover {
 }
 /* ===== 7. Service Area CSS ===== */
 .metalplan_serv_area {
-    padding: 110px 0 100px;
+    padding: 0px;
+    background: url("/static/new_image/au2.jpeg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .metalplan_serv_area .witr_section_title {
-    margin-bottom: 40px;
+    margin-bottom: 40px;margin-top: 40px;
 }
 .metalplan_serv_area .all_color_service {
     box-shadow: 0px 0px 79px 0px rgba(0,0,0,.04);
