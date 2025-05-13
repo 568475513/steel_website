@@ -43,18 +43,20 @@ a:hover {
     color: #ffc80a;
 }
  body {
-	font-family: Poppins,sans-serif;
+	font-family: Poppins,sans-serif !important;
+    /* font-family: inherit !important; */
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.6 !important;
 	color:#303849;
 }
  p {
      font-style: normal;
 }
 h1, h1 a, h2, h2 a, h3, h3 a, h4, h4 a, h5, h5 a, h6, h6 a {
-    font-family: Inter,sans-serif;
+    /* font-family: Inter,sans-serif; */
+    font-family: Poppins,sans-serif;
     font-style: normal;
     line-height: 1.2;
     font-weight: 700;
@@ -284,7 +286,8 @@ h1, h1 a, h2, h2 a, h3, h3 a, h4, h4 a, h5, h5 a, h6, h6 a {
     font-size: 16px;
     font-weight: 600;
     color: #272727;
-    font-family: Inter,sans-serif;
+    /* font-family: Inter,sans-serif; */
+    font-family: Poppins,sans-serif;
 }
 .metalplan_menu ul .sub-menu li a:hover, .metalplan_menu ul .sub-menu li.current-menu-item a, .metalplan_menu>ul>li.current-menu-item>a, .metalplan_menu>ul>li>a:hover, .metalplan_nav_area.prefix .metalplan_menu>ul>li.current-menu-item>a, .metalplan_nav_area.prefix .metalplan_menu>ul>li>a:hover, .hbg2 .metalplan_menu>ul>li.current-menu-item>a, .hbg2 .metalplan_menu>ul>li>a:hover, .heading_style_2 .metalplan_menu>ul>li.current-menu-item>a, .heading_style_2 .metalplan_menu>ul>li>a:hover, .heading_style_3 .metalplan_menu>ul>li.current-menu-item>a, .heading_style_3 .metalplan_menu>ul>li>a:hover, .heading_style_4 .metalplan_menu>ul>li.current-menu-item>a, .heading_style_4 .metalplan_menu>ul>li>a:hover {
     color: #ffc80a;
@@ -391,7 +394,8 @@ h1, h1 a, h2, h2 a, h3, h3 a, h4, h4 a, h5, h5 a, h6, h6 a {
     color: #272727;
     visibility: inherit !important;
     padding: 4px 0px;
-    font-family: Inter,sans-serif;
+    /* font-family: Inter,sans-serif; */
+    font-family: Poppins,sans-serif;
 }
  .metalplan_menu ul .sub-menu li:hover > a, .metalplan_menu ul .sub-menu .sub-menu li:hover > a, .metalplan_menu ul .sub-menu .sub-menu .sub-menu li:hover > a, .metalplan_menu ul .sub-menu .sub-menu .sub-menu .sub-menu li:hover > a {
      color: #ffc80a;
@@ -1363,7 +1367,8 @@ a.dtbtn:hover {
     padding: 11px 15px;
     transition: .5s;
     padding: 9px 20px 9px 10px;
-    font-family: inherit;
+    /* font-family: inherit; */
+    font-family: Poppins,sans-serif;
 }
 .faq_area2 .accordion_area .card-2 p {
     padding: 15px 23px 15px;
