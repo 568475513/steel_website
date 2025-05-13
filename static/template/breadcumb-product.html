@@ -22,14 +22,14 @@
 
       'A5T.html': 'Oilfield Tubular Goods (OCTG)',
       'A5S.html': 'Oilfield Tubular Goods (OCTG)',
-      'SP.html': 'Oilfield Tubular Goods (OCTG)',
+      'OTG/SP.html': 'Oilfield Tubular Goods (OCTG)',
       'DP.html': 'Oilfield Tubular Goods (OCTG)',
       'CCP.html': 'Oilfield Tubular Goods (OCTG)',
 
 
       'CSP.html': 'SMLS STEEL PIPE',
       'BSP.html': 'SMLS STEEL PIPE',
-      'SP.html': 'SMLS STEEL PIPE',
+      'SSP2/SP.html': 'SMLS STEEL PIPE',
       'ASP.html': 'SMLS STEEL PIPE',
 
       'Flange.html': 'STEEL FITTINGS',
@@ -62,11 +62,14 @@
       'Coated Steel Pipe': 8
     }
     const htmlName = getLastSegment();
+    console.log(htmlName, breadcumbText[htmlName], 'htmlName')
     $('#breadcumb-area-title').text(breadcumbText[htmlName]).attr("href", `../../products_second.html?t=${tJson[breadcumbText[htmlName]]}`);
 
     function getLastSegment() {
-      var pathArray = window.location.pathname.split('/');
-      return pathArray.pop() || 'SSP.html'; // 如果路径中没有斜杠，返回默认值
+      var pathname = window.location.pathname;
+      var pathArray = pathname.split('/');
+      var productIndex = pathArray.indexOf('product');
+      return pathArray[pathArray.length - 1] === 'SP.html' ? pathArray.slice(productIndex + 1).join('/') : pathArray.pop() || 'SSP.html'; // 如果路径中没有斜杠，返回默认值
     }
   });
 </script>
