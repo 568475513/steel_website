@@ -267,7 +267,8 @@
 	}
     /* swiper slider */
      .witr_swiper_height {
-         width: 100% !important;
+         width: calc(100% + 30px) !important;
+         margin-right: 0 !important;
     }
      .witr_swiper_content h2, .witr_swiper_content h3 {
          font-size: 55px;
@@ -276,7 +277,8 @@
          margin-left:0px !important;
     }
      .d1.witr_swiper_height {
-         width: 100% !important;
+         width: calc(100% + 30px) !important;
+         margin-right: 0 !important;
     }
      .w_slider_3 .d1.witr_swiper_height {
          width: 100% !important;
@@ -906,13 +908,15 @@
 		height: 650px;
 	}
      .witr_swiper_height {
-         width: 100% !important;
+         width: calc(100% + 30px) !important;
+         margin-right: 0 !important;
     }
      .w_slider_4 .witr_swiper_height {
          margin-left:0px !important;
     }
      .t1.witr_swiper_height {
-         width: 100% !important;
+         width: calc(100% + 30px) !important;
+         margin-right: 0 !important;
     }
      .w_slider_3 .t1.witr_swiper_height {
          transform: translateX(0) !important;
@@ -1918,7 +1922,8 @@
          margin-left:0px !important;
     }
      .m1.witr_swiper_height {
-         width: 100% !important;
+         width: calc(100% + 30px) !important;
+         margin-right: 0 !important;
     }
 	.witr_swiper_area .text-left .slider_vd_icon {
 		display: none;
