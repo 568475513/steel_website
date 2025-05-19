@@ -171,7 +171,8 @@
          right: -95px !important;
     }
      .witr_swiper_height {
-         width: 100% !important;
+         width: calc(100% + 30px) !important;
+         margin-right: 0 !important;
     }
      .w_slider_3 .witr_swiper_height {
          width: 100% !important;
