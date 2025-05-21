@@ -784,6 +784,8 @@ a.dtbtn:hover {
     background-position: center center;
     height: 850px;
     background-size: cover;
+    margin-right: 0 !important;
+    width: calc(100% + 30px) !important;
 }
 .witr_swiper_height:before, .wittr_gallery_swiper:before {
     content: "";
