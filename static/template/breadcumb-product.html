@@ -62,7 +62,6 @@
       'Coated Steel Pipe': 8
     }
     const htmlName = getLastSegment();
-    console.log(htmlName, breadcumbText[htmlName], 'htmlName')
     $('#breadcumb-area-title').text(breadcumbText[htmlName]).attr("href", `../../products_second.html?t=${tJson[breadcumbText[htmlName]]}`);
 
     function getLastSegment() {

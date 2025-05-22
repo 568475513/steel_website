@@ -4710,3 +4710,16 @@ button:focus {
  .tx_btn_global_color:hover{
      background:#000;
 }
+
+
+.t-e-main {
+    border: 1px solid #f1f1f1;
+    padding: 16px;
+    margin-bottom: 24px;
+}
+.t-e-main .prot_thumb img {
+    height: 12rem;
+}
+.t-e-main:hover .t-e-title{
+    color: #ffc80a;
+}
