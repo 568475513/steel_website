@@ -3,7 +3,7 @@
    <head>
       <meta charset="UTF-8">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
-      <title>TESTING EQUIPMENT</title>
+      <title>TESTING EQUIPMENT </title>
       <meta name="script" content="">
       <meta name="viewport" content="wicorporateh=device-wicorporateh, initial-scale=1">
       <!-- Favicon Icon -->
@@ -47,9 +47,9 @@
       <div class="metp_portfolio_area port_3colmn portfolio_style2 pstyle2 pstyle_1">
          <div class="container">
             <div class="row">
-               <div class="col-lg-12">
+               <div style="width: 100%;">
                   <div class="pstyle2">
-                     <div id="list-container" class="prot_wrap row portfolio_active">
+                     <div id="list-container" class="prot_wrap row portfolio_active" style="justify-content: center;">
                      </div>
                   </div>
                </div>
@@ -114,6 +114,8 @@
             { id: 12, title: 'UT test' },
             { id: 13, title: 'UT' },
             { id: 14, title: 'X RAY TEST' },
+            { id: 0 },
+            { id: 0 }
          ]
         }
 
@@ -129,14 +131,14 @@
           }
         }
         $.each(list[current], function(index, item) {
-            var $div = $(`<div class="grid-item t-e-main col-lg-3 eportfolio_item col-md-4 col-mr-4 col-xs-12 col-sm-12 coated-steel witr_all_mb_30">
+            var $div = $(item.id === 0 ? '<div style="width: 25%"></div>' : `<div class="grid-item t-e-main eportfolio_item coated-steel witr_all_mb_30">
                            <div class="single_protfolio">
                               <div class="prot_thumb">
                                  <img src="${'static/new_image/quality/t-e-' + item.id + '.jpg'}" alt="image">
                                  <div class="prot_content">
                                     <div class="prot_content_inner">
                                        <div class="picon">
-                                          <a class="portfolio-icon venobox vbox-item" data-gall="myGallery" href="../../static/new_image/products/LSAW/4.jpg">
+                                          <a class="portfolio-icon venobox vbox-item" data-gall="myGallery" href="${'static/new_image/quality/t-e-' + item.id + '.jpg'}">
                                           <i class="icofont-image"></i></a>
                                        </div>
                                     </div>
