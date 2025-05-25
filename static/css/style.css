@@ -4710,3 +4710,43 @@ button:focus {
  .tx_btn_global_color:hover{
      background:#000;
 }
+
+
+.t-e-main {
+    border: 1px solid #f1f1f1;
+    padding: 16px;
+    width: calc(25% - 24px);
+    margin: 0 12px 24px 12px;
+    position: unset !important;
+}
+.t-e-main .prot_thumb {
+    height: 16rem;
+    overflow:hidden;
+}
+.t-e-main .prot_thumb img {
+    width: 100%;
+    height: 16rem;
+    object-fit: cover; /* 或者使用 contain, fill, none, scale-down */
+}
+.t-e-main:hover .t-e-title{
+    color: #ffc80a;
+}
+.q-p-i-main {
+    border: 1px solid #f1f1f1;
+    padding: 16px;
+    width: calc(25% - 24px);
+    margin: 0 12px 24px 12px;
+    position: unset !important;
+}
+.q-p-i-main .prot_thumb {
+    height: 16rem;
+    overflow:hidden;
+}
+.q-p-i-main .prot_thumb img {
+    width: 100%;
+    height: auto; /* 高度自动 */
+    object-fit: cover; /* 或者使用 contain, fill, none, scale-down */
+}
+.q-p-i-main:hover .t-e-title{
+    color: #ffc80a;
+}

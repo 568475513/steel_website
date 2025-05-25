@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>TESTING EQUIPMENT </title>
+      <meta name="script" content="">
+      <meta name="viewport" content="wicorporateh=device-wicorporateh, initial-scale=1">
+      <!-- Favicon Icon -->
+      
+      <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="static/css/venobox.css">
+      <link rel="stylesheet" type="text/css" href="static/css/plugin_theme_css.css">
+      <link rel="stylesheet" type="text/css" href="static/css/style.css">
+      <link rel="stylesheet" type="text/css" href="static/css/responsive.css">
+      <!-- modernizr js -->	
+      <script src="static/js/modernizr-2.8.3.min.js"></script>		
+   </head>
+   <body>
+			<!-- header area -->
+			<div id="header-template"></div>
+      <!-- breadcumb area -->
+      <div class="breadcumb-area">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 txtc  text-center ccase">
+                  <div class="brpt">
+                     <h2>TESTING EQUIPMENT</h2>
+                  </div>
+                  <div class="breadcumb-inner">
+                     <ul>
+                        <li>You here! <i class="icofont-thin-right"></i></li>
+                        <li><a href="index.html" rel="v:url" property="v:title">Home</a></li>
+                        <li><i class="icofont-thin-right"></i></li>
+                        <li><span>Quality</span></li>
+                        <li><i class="icofont-thin-right"></i></li>
+                        <li><span class="current">TESTING EQUIPMENT</span></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End breadcumb area -->
+      <!-- menufacturing area -->
+ 
+      <div class="metp_portfolio_area port_3colmn portfolio_style2 pstyle2 pstyle_1" style="padding: 50px 0 50px;">
+         <div class="container">
+            <div style="margin-bottom: 24px;">
+               Upholding the principle of quality - first, Onetop attach great importance to product quality control and inspection. We are equipped with a series of advanced testing equipment, such as pendulum impact testing machines, hardness testers, and metallographic microscopes. These enable us to conduct comprehensive and high - precision quality inspections on steel pipes, fully meeting the diverse inspection requirements of our customers. The steel pipes we produce strictly comply with a wide range of domestic and international standards, ensuring reliable quality.
+            </div>
+            <div class="row">
+               <div style="width: 100%;">
+                  <div class="pstyle2">
+                     <div id="list-container" class="prot_wrap row portfolio_active" style="justify-content: center;">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+	  <div class="row" style="margin-bottom: 24px;">
+	     <div class="col-md-12">
+	        <div class="paginations">
+	           <ul class="page-numbers" id="page-numbers-ul">
+	              <li>
+                     <span id="page-numbers-span-1" aria-current="page" class="page-numbers current">1</span>
+                     <a id="page-numbers-a-1" class="page-numbers" href="quality-testing-equipment.html?p=1">1</a>
+                  </li>
+	              <li>
+                     <span id="page-numbers-span-2" aria-current="page" class="page-numbers current">2</span>
+                     <a id="page-numbers-a-2" class="page-numbers" href="quality-testing-equipment.html?p=2">2</a>
+                  </li>
+	           </ul>
+	        </div>
+	     </div>
+	  </div>
+      <!-- menufacturing video -->
+      <!-- testimonial area -->
+      <!-- faq area 2 -->
+      <!-- footer area -->
+      <div id="footer-template"></div>
+      <!-- Include All JS -->
+      <script src="static/js/jquery-3.5.1.min.js"></script>
+      <script src="static/js/bootstrap.min.js"></script>
+      <script src="static/js/isotope.pkgd.min.js"></script>
+      <script src="static/js/owl.carousel.min.js"></script>
+      <script src="static/js/slick.min.js"></script>
+      <script src="static/js/imagesloaded.pkgd.min.js"></script>
+      <script src="static/js/venobox.min.js"></script>
+      <script src="static/js/jquery.appear.js"></script>
+      <script src="static/js/jquery.knob.js"></script>
+      <script src="static/js/theme-pluginjs.js"></script>
+      <script src="static/js/jquery.meanmenu.js"></script>
+      <script src="static/js/ajax-mail.js"></script>		
+      <script src="static/js/theme.js"></script>
+      <script>
+         $(document).ready(function(){
+            $("#footer-template").load("static/template/footer.html");  
+            $("#header-template").load("static/template/header.html");
+        });
+        const list = {
+         1: [
+            { id: 1, title: '200T Flattening test machine' },
+            { id: 2, title: '50000J DWTT tester' },
+            { id: 3, title: 'Eddy current Test machine' },
+            { id: 4, title: 'HARDNESS TESTER' },
+            { id: 5, title: 'Hydraulic Test' },
+            { id: 6, title: 'Low Temperature Impact test' },
+            { id: 7, title: 'Metallographic Microscope' },
+            { id: 8, title: 'pendulum impact testing machine' },
+         ],
+         2: [
+            { id: 9, title: 'spectrometer' },
+            { id: 10, title: 'Tensile Tesing Machine' },
+            { id: 11, title: 'Ultrasonic test for pipe body and weld seam' },
+            { id: 12, title: 'UT test' },
+            { id: 13, title: 'UT' },
+            { id: 14, title: 'X RAY TEST' },
+            { id: 0 },
+            { id: 0 }
+         ]
+        }
+
+        const page = 2; //两页
+        const current = Number(getQueryParam('p'));
+        for(let i = 1; i<= page; i++) {
+          if(i === current) {
+            $(`#page-numbers-span-${i}`).show();
+            $(`#page-numbers-a-${i}`).hide();
+          } else {
+            $(`#page-numbers-span-${i}`).hide();
+            $(`#page-numbers-a-${i}`).show();
+          }
+        }
+        $.each(list[current], function(index, item) {
+            var $div = $(item.id === 0 ? '<div style="width: 25%"></div>' : `<div class="grid-item t-e-main eportfolio_item coated-steel witr_all_mb_30">
+                           <div class="single_protfolio">
+                              <div class="prot_thumb">
+                                 <img src="${'static/new_image/quality/t-e-' + item.id + '.jpg'}" alt="image">
+                                 <div class="prot_content">
+                                    <div class="prot_content_inner">
+                                       <div class="picon">
+                                          <a class="portfolio-icon venobox vbox-item" data-gall="myGallery" href="${'static/new_image/quality/t-e-' + item.id + '.jpg'}">
+                                          <i class="icofont-image"></i></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="text-center t-e-title">${item.title}</div>
+                        </div>`); // 为每个项目创建一个<div>元素并设置文本
+            $("#list-container").append($div);  // 将<div>添加到页面中
+         });
+
+          function getQueryParam(param) {
+              const urlParams = new URLSearchParams(window.location.search);
+              return urlParams.get(param) || 1;
+            }
+     </script>
+   </body>
+</html>
