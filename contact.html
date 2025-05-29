@@ -75,8 +75,8 @@
                      <div class="text_box all_icon_color">
                         <i class="flaticon flaticon-mail"></i>
                         <h3><a href="#">Email</a></h3>
-                        <p>sales@onetopsteel.com</p>
-                        <p>info@onetopsteel.com</p>
+                        <p><a href="mailto:sales@onetopsteel.com?subject=Hello&body=This is the body of the email.">sales@onetopsteel.com</a></p>
+                        <p><a href="mailto:info@onetopsteel.com?subject=Hello&body=This is the body of the email.">info@onetopsteel.com</a></p>
 
                      </div>
                   </div>
@@ -180,11 +180,10 @@
                   url: "mail.php", // 目标处理脚本
                   data: $(this).serialize(), // 序列化表单数据
                   success: function(response) {
-                     console.log('邮件发送成功:', response);
+                     alert("邮件发送成功");
                   },
                   error: function(xhr, status, error) {
-                     console.error('邮件发送失败:', error);
-                     // alert('Error sending message.')
+                     alert("邮件发送失败");
                   }
                });
             });
