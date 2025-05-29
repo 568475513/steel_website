@@ -58,7 +58,7 @@
             </div>
          </div>
       </div>
-	  <div class="row" style="margin-bottom: 24px;">
+	  <!-- <div class="row" style="margin-bottom: 24px;">
 	     <div class="col-md-12">
 	        <div class="paginations">
 	           <ul class="page-numbers" id="page-numbers-ul">
@@ -68,7 +68,7 @@
 	           </ul>
 	        </div>
 	     </div>
-	  </div>
+	  </div> -->
       <!-- menufacturing video -->
       <!-- testimonial area -->
       <!-- faq area 2 -->
@@ -95,9 +95,16 @@
         });
         const list = {
          1: [
-            { id: 1, title: 'VENDOR INSPECTION REPORT' },
-            { id: 2, title: 'RIA' },
-            { id: 3, title: 'SGS' },
+            { id: 1, title: 'APPLUS 3rd party inspection' },
+            { id: 2, title: 'Applus' },
+            { id: 3, title: 'BV 3.2 CERT' },
+            { id: 4, title: 'BV-1' },
+            { id: 5, title: 'GLOBAL INSPECTION' },
+            { id: 6, title: 'INTERTEK' },
+            { id: 7, title: 'RIA' },
+            { id: 8, title: 'SGS' },
+            { id: 9, title: 'TUV' },
+            { id: 10, title: 'TUV3.2 ' },
          ]
         }
 
@@ -107,15 +114,7 @@
             var $div = $(`<div class="grid-item q-p-i-main eportfolio_item coated-steel witr_all_mb_30">
                            <div class="single_protfolio">
                               <div class="prot_thumb">
-                                 <img src="${'static/new_image/quality/file-' + item.id + '.png'}" alt="image">
-                                 <div class="prot_content">
-                                    <div class="prot_content_inner">
-                                       <div class="picon">
-                                          <a class="portfolio-icon venobox vbox-item" data-gall="myGallery" href="${'static/new_image/quality/file-' + item.id + '.png'}">
-                                          <i class="icofont-image"></i></a>
-                                       </div>
-                                    </div>
-                                 </div>
+                                 <img src="${'static/new_image/quality/file-' + item.id + '.jpg'}" alt="image">
                               </div>
                            </div>
                            <div class="text-center t-e-title">${item.title}</div>
