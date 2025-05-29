@@ -59,7 +59,7 @@
             </div>
          </div>
       </div>
-	  <div class="row" style="margin-bottom: 24px;">
+	  <!-- <div class="row" style="margin-bottom: 24px;">
 	     <div class="col-md-12">
 	        <div class="paginations">
 	           <ul class="page-numbers" id="page-numbers-ul">
@@ -74,7 +74,7 @@
 	           </ul>
 	        </div>
 	     </div>
-	  </div>
+	  </div> -->
       <!-- menufacturing video -->
       <!-- testimonial area -->
       <!-- faq area 2 -->
@@ -109,20 +109,27 @@
             { id: 6, title: 'Low Temperature Impact test' },
             { id: 7, title: 'Metallographic Microscope' },
             { id: 8, title: 'pendulum impact testing machine' },
-         ],
-         2: [
             { id: 9, title: 'spectrometer' },
             { id: 10, title: 'Tensile Tesing Machine' },
             { id: 11, title: 'Ultrasonic test for pipe body and weld seam' },
             { id: 12, title: 'UT test' },
             { id: 13, title: 'UT' },
             { id: 14, title: 'X RAY TEST' },
-            { id: 0 },
             { id: 0 }
-         ]
+         ],
+         // 2: [
+         //    { id: 9, title: 'spectrometer' },
+         //    { id: 10, title: 'Tensile Tesing Machine' },
+         //    { id: 11, title: 'Ultrasonic test for pipe body and weld seam' },
+         //    { id: 12, title: 'UT test' },
+         //    { id: 13, title: 'UT' },
+         //    { id: 14, title: 'X RAY TEST' },
+         //    { id: 0 },
+         //    { id: 0 }
+         // ]
         }
 
-        const page = 2; //两页
+        const page = 1; //两页
         const current = Number(getQueryParam('p'));
         for(let i = 1; i<= page; i++) {
           if(i === current) {
@@ -134,18 +141,10 @@
           }
         }
         $.each(list[current], function(index, item) {
-            var $div = $(item.id === 0 ? '<div style="width: 25%"></div>' : `<div class="grid-item t-e-main eportfolio_item coated-steel witr_all_mb_30">
+            var $div = $(item.id === 0 ? '<div style="width: 20%"></div>' : `<div class="grid-item t-e-main eportfolio_item coated-steel witr_all_mb_30">
                            <div class="single_protfolio">
                               <div class="prot_thumb">
                                  <img src="${'static/new_image/quality/t-e-' + item.id + '.jpg'}" alt="image">
-                                 <div class="prot_content">
-                                    <div class="prot_content_inner">
-                                       <div class="picon">
-                                          <a class="portfolio-icon venobox vbox-item" data-gall="myGallery" href="${'static/new_image/quality/t-e-' + item.id + '.jpg'}">
-                                          <i class="icofont-image"></i></a>
-                                       </div>
-                                    </div>
-                                 </div>
                               </div>
                            </div>
                            <div class="text-center t-e-title">${item.title}</div>
