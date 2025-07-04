@@ -216,8 +216,8 @@ h1, h1 a, h2, h2 a, h3, h3 a, h4, h4 a, h5, h5 a, h6, h6 a {
     box-shadow: 0 0 30px 0 rgb(0 0 0 / 10%);
 }
 .metalplan_nav_area, .trp_nav_area, .transprent-menu .metalplan_nav_area {
-    padding-right: 300px;
-    padding-left: 300px;
+    padding-right: 255px;
+    padding-left: 255px;
 }
 .metalplan_nav_area {
     background: #fff;
@@ -1698,6 +1698,7 @@ a.dtbtn:hover {
     border-radius: 10px;
     background: #fff;
     font-size: 15px;
+    height: 20vh;
 }
 .ps1 .witr_content_pslide_text {
     position: absolute;
@@ -4130,7 +4131,6 @@ button:focus {
 .menufacturing_area .text_box {
     padding: 10px 32px 31px 32px;
     box-shadow: 0px 0px 20px 0px rgb(42 67 113 / 15%);
-    margin-bottom: 20px;
 }
 .menufacturing_area .text_box:hover{
 	box-shadow: 8px 8px 30px 0px rgb(42 67 113 / 15%);

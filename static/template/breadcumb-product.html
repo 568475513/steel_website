@@ -1,14 +1,14 @@
 <ul>
-  <li>You here! <i class="icofont-thin-right"></i></li>
-  <li><a href="../../index.html" rel="v:url" property="v:title">Home</a></li>
+  <li><span i18n="You here">You here! </span><i class="icofont-thin-right"></i></li>
+  <li><a href="../../index.html" rel="v:url" property="v:title" i18n="home">Home</a></li>
   <li><i class="icofont-thin-right"></i></li>
-  <li><a href="../../products.html" rel="v:url" property="v:title">Products</a></li>
+  <li><a href="../../products.html" rel="v:url" property="v:title" i18n="Products">Products</a></li>
   <li><i class="icofont-thin-right"></i></li>
   <li><a href="#" id="breadcumb-area-title"></a></li>
 </ul>
 
 <script>
-  $(document).ready(function(){
+  // $(document).ready(function(){
     //处理面包屑
     var breadcumbText = {
       'SSP.html': 'STAINLESS STEEL PIPE',
@@ -62,7 +62,7 @@
       'Coated Steel Pipe': 8
     }
     const htmlName = getLastSegment();
-    $('#breadcumb-area-title').text(breadcumbText[htmlName]).attr("href", `../../products_second.html?t=${tJson[breadcumbText[htmlName]]}`);
+    $('#breadcumb-area-title').text(breadcumbText[htmlName]).attr("href", `../../products_second.html?t=${tJson[breadcumbText[htmlName]]}`).attr("i18n", breadcumbText[htmlName]);
 
     function getLastSegment() {
       var pathname = window.location.pathname;
@@ -70,5 +70,5 @@
       var productIndex = pathArray.indexOf('product');
       return pathArray[pathArray.length - 1] === 'SP.html' ? pathArray.slice(productIndex + 1).join('/') : pathArray.pop() || 'SSP.html'; // 如果路径中没有斜杠，返回默认值
     }
-  });
+  // });
 </script>

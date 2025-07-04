@@ -3,7 +3,7 @@
    <head>
       <meta charset="UTF-8">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
-      <title>TESTING EQUIPMENT </title>
+      <title i18n="TESTING EQUIPMENT">TESTING EQUIPMENT </title>
       <meta name="script" content="">
       <meta name="viewport" content="wicorporateh=device-wicorporateh, initial-scale=1">
       <!-- Favicon Icon -->
@@ -25,16 +25,16 @@
             <div class="row">
                <div class="col-md-12 txtc  text-center ccase">
                   <div class="brpt">
-                     <h2>TESTING EQUIPMENT</h2>
+                     <h2 i18n="TESTING EQUIPMENT">TESTING EQUIPMENT</h2>
                   </div>
                   <div class="breadcumb-inner">
                      <ul>
-                        <li>You here! <i class="icofont-thin-right"></i></li>
-                        <li><a href="index.html" rel="v:url" property="v:title">Home</a></li>
+                        <li><span i18n="You here">You here!</span> <i class="icofont-thin-right"></i></li>
+                        <li><a href="index.html" rel="v:url" property="v:title" i18n="home">Home</a></li>
                         <li><i class="icofont-thin-right"></i></li>
-                        <li><span>Quality</span></li>
+                        <li><span i18n="Quality">Quality</span></li>
                         <li><i class="icofont-thin-right"></i></li>
-                        <li><span class="current">TESTING EQUIPMENT</span></li>
+                        <li><span class="current" i18n="TESTING EQUIPMENT">TESTING EQUIPMENT</span></li>
                      </ul>
                   </div>
                </div>
@@ -46,7 +46,7 @@
  
       <div class="metp_portfolio_area port_3colmn portfolio_style2 pstyle2 pstyle_1" style="padding: 50px 0 50px;">
          <div class="container">
-            <div style="margin-bottom: 24px;">
+            <div style="margin-bottom: 24px;" i18n="quality desc2">
                Upholding the principle of quality - first, Onetop attach great importance to product quality control and inspection. We are equipped with a series of advanced testing equipment, such as pendulum impact testing machines, hardness testers, and metallographic microscopes. These enable us to conduct comprehensive and high - precision quality inspections on steel pipes, fully meeting the diverse inspection requirements of our customers. The steel pipes we produce strictly comply with a wide range of domestic and international standards, ensuring reliable quality.
             </div>
             <div class="row">
@@ -147,7 +147,7 @@
                                  <img src="${'static/new_image/quality/t-e-' + item.id + '.jpg'}" alt="image">
                               </div>
                            </div>
-                           <div class="text-center t-e-title">${item.title}</div>
+                           <div class="text-center t-e-title" i18n="${item.title}">${item.title}</div>
                         </div>`); // 为每个项目创建一个<div>元素并设置文本
             $("#list-container").append($div);  // 将<div>添加到页面中
          });
