@@ -3,7 +3,7 @@
    <head>
       <meta charset="UTF-8">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
-      <title>3RD PARTY INSPECTION </title>
+      <title i18n="3RD PARTY INSPECTION">3RD PARTY INSPECTION </title>
       <meta name="script" content="">
       <meta name="viewport" content="wicorporateh=device-wicorporateh, initial-scale=1">
       <!-- Favicon Icon -->
@@ -25,16 +25,16 @@
             <div class="row">
                <div class="col-md-12 txtc  text-center ccase">
                   <div class="brpt">
-                     <h2>3RD PARTY INSPECTION</h2>
+                     <h2 i18n="3RD PARTY INSPECTION">3RD PARTY INSPECTION</h2>
                   </div>
                   <div class="breadcumb-inner">
                      <ul>
-                        <li>You here! <i class="icofont-thin-right"></i></li>
-                        <li><a href="index.html" rel="v:url" property="v:title">Home</a></li>
+                        <li><span i18n="You here">You here! </span><i class="icofont-thin-right"></i></li>
+                        <li><a href="index.html" rel="v:url" property="v:title" i18n="home">Home</a></li>
                         <li><i class="icofont-thin-right"></i></li>
-                        <li><span>Quality</span></li>
+                        <li><span i18n="Quality">Quality</span></li>
                         <li><i class="icofont-thin-right"></i></li>
-                        <li><span class="current">3RD PARTY INSPECTION</span></li>
+                        <li><span class="current" i18n="3RD PARTY INSPECTION">3RD PARTY INSPECTION</span></li>
                      </ul>
                   </div>
                </div>
@@ -45,7 +45,7 @@
       <!-- menufacturing area -->
       <div class="metp_portfolio_area port_3colmn portfolio_style2 pstyle2 pstyle_1" style="padding: 50px 0 50px">
          <div class="container">
-            <div style="margin-bottom: 24px;">
+            <div style="margin-bottom: 24px;" i18n="quality desc1">
                In the race of steel pipe quality control, we deeply understand our customers' strict pursuit of quality. Relying on a professional and complete network of third-party testing partners, we can carry out comprehensive and multi-dimensional testing services for steel pipe products, from chemical composition analysis to mechanical property testing, from non-destructive flaw detection to dimensional accuracy measurement. Each test is performed by authoritative third-party institutions to ensure accurate and reliable data and fair and effective results. With third-party testing as a solid backing, we build a solid quality defense line for every steel pipe leaving the factory and deliver a full-score answer to our customers' trust.
             </div>
             <div class="row">
@@ -88,6 +88,8 @@
       <script src="static/js/jquery.meanmenu.js"></script>
       <script src="static/js/ajax-mail.js"></script>		
       <script src="static/js/theme.js"></script>
+      <script src="static/js/jquery.i18n.js"></script>
+      <script src="static/i18n/index.js"></script>
       <script>
          $(document).ready(function(){
             $("#footer-template").load("static/template/footer.html");  
@@ -117,7 +119,7 @@
                                  <img src="${'static/new_image/quality/file-' + item.id + '.jpg'}" alt="image">
                               </div>
                            </div>
-                           <div class="text-center t-e-title">${item.title}</div>
+                           <div class="text-center t-e-title" i18n="${item.title}">${item.title}</div>
                         </div>`); // 为每个项目创建一个<div>元素并设置文本
             $("#list-container").append($div);  // 将<div>添加到页面中
          });
