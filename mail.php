@@ -11,7 +11,7 @@ $mail = new PHPMailer(true);
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['name'];
     $email = $_POST['email'];
-    $website = $_POST['website'];
+    $company = $_POST['company'];
     $number = $_POST['number'];
     $comment = $_POST['comment'];
 
@@ -35,9 +35,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Body    = "
         Name: $name <br>
         Email: $email <br>
-        Website: $website  <br>
+        Company: $company  <br>
         Phone: $number  <br>
-        Comment: $comment  <br>
+        Requirement: $comment  <br>
         ";
 
         $mail->send();
