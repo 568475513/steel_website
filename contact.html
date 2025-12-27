@@ -115,27 +115,27 @@
                     <div class="row">
                       <div class="col-lg-6 col-md-6">
                         <div class="twr_form_box">
-                          <input type="text" name="name" placeholder="Name*" i18n="name.placeholder">
+                          <input type="text" name="name" id="name" placeholder="Name*" i18n="name.placeholder">
                         </div>
                       </div>
                       <div class="col-lg-6 col-md-6">
                         <div class="twr_form_box">
-                          <input type="email" name="email" placeholder="E-mail*" i18n="email.placeholder">
+                          <input type="email" name="email" id="email" placeholder="E-mail*" i18n="email.placeholder">
                         </div>
                       </div>
                       <div class="col-lg-6 col-md-6">
                         <div class="twr_form_box">
-                          <input type="text" name="company" placeholder="Company*" i18n="company.placeholder">
+                          <input type="text" name="company" id="company" placeholder="Company*" i18n="company.placeholder">
                         </div>
                       </div>
                       <div class="col-lg-6 col-md-6">
                         <div class="twr_form_box">
-                          <input type="number" name="number" placeholder="Phone*" i18n="number.placeholder">
+                          <input type="number" name="number" id="number" placeholder="Phone*" i18n="number.placeholder">
                         </div>
                       </div>
                       <div class="col-lg-12 col-md-12">
                         <div class="twr_form_box ">
-                          <textarea name="comment" placeholder="Your Requirement: e.g. Pipe specs, fitting type, quantity..." i18n="comment.placeholder"></textarea>
+                          <textarea name="comment" id="comment" placeholder="Your Requirement: e.g. Pipe specs, fitting type, quantity..." i18n="comment.placeholder"></textarea>
                         </div>
                         <div class="twr_form_box text-center">
                           <button type="submit" name="ok" class="btn footer_btn" i18n="Submit Now">Submit Now</button>
@@ -186,16 +186,36 @@
       $(document).ready(function(ev) {
         $('#contact-form').submit(function(event) {
           event.preventDefault(); // 阻止表单的默认提交行为
+          var name = $("#name").val();
+          var company = $("#company").val();
+          var email = $("#email").val();
+          var number = $("#number").val();
+          var comment = $("#comment").val();
+
+          if (name == '') {
+            alert("Please Enter Name");
+          }
+          if (email == '') {
+            alert("Please Enter Email");
+          }
+          if (company == '') {
+            alert("Please Enter Company");
+          }
+          if (number == '') {
+            alert("Please Enter Phone Number");
+          }
+          if (comment == '') {
+            alert("Please Enter Your Requirement");
+          }
           $.ajax({
             type: "POST",
             url: "mail.php", // 目标处理脚本
             data: $(this).serialize(), // 序列化表单数据
             success: function(response) {
-              console.log('邮件发送成功:', response);
+              alert('Sending Message Success!.');
             },
             error: function(xhr, status, error) {
-              console.error('邮件发送失败:', error);
-              // alert('Error sending message.')
+              alert('Sending Message Error!')
             }
           });
         });
