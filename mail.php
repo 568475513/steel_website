@@ -24,6 +24,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Password   = 'fmgfjexyvodjbebj';      // SMTP 密码
         $mail->SMTPSecure = 'ssl'; // 加密方式
         $mail->Port       = 465;                 // SMTP 端口
+        $mail->CharSet    = 'UTF-8';
+       
 
     // 收件人设置
         $mail->setFrom('568475513@qq.com', '发件人名称');
@@ -31,7 +33,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // 邮件内容
         $mail->isHTML(true);                     // 设置为HTML格式
-        $mail->Subject = 'One Top Steel!';
+        $mail->Subject = 'INQUIRY!';
+        $mail->setCharset('UTF-8');
         $mail->Body    = "
         Name: $name <br>
         Email: $email <br>

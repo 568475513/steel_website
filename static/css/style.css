@@ -4753,3 +4753,35 @@ button:focus {
 .q-p-i-main:hover .t-e-title{
     color: #ffc80a;
 }
+
+.newScroll{
+    width: 5%;
+    right: 0;
+    bottom: 20%;
+    position: fixed;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    background: #ffc80a;
+    z-index: 10000;
+}
+
+.newScroll ul{
+    width: auto;
+}
+
+.newScroll ul li{
+    height: auto;
+    display: block;
+    margin: 10px 0;
+    transition: .5s;
+}
+
+.newScroll ul li a{
+    color: #fff;
+}
+
+.newScroll ul li a:hover{
+    color: #000;
+}
